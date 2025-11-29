@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationManifest>src\Core\Orders\ShippingInfo.cs</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="src\Core\Common\Enums\" />
+    <Folder Include="src\Core\Payments\Events\" />
+    <Folder Include="src\Core\Promotions\Enums\" />
+    <Folder Include="src\Core\Promotions\Events\" />
+    <Folder Include="src\Core\Promotions\Specifications\" />
+    <Folder Include="src\Core\Shipping\Enums\" />
+    <Folder Include="src\Core\Shipping\Events\" />
+  </ItemGroup>
+
+</Project>

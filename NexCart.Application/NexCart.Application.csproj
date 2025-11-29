@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="src\Core\Catalog\Commands\" />
+    <Folder Include="src\Core\Catalog\DTOs\" />
+    <Folder Include="src\Core\Catalog\Queries\" />
+    <Folder Include="src\Core\Common\Mappings\" />
+    <Folder Include="src\Core\Customers\Commands\" />
+    <Folder Include="src\Core\Customers\DTOs\" />
+    <Folder Include="src\Core\Customers\Queries\" />
+    <Folder Include="src\Core\Orders\Commands\" />
+    <Folder Include="src\Core\Orders\DTOs\" />
+    <Folder Include="src\Core\Orders\Queries\" />
+    <Folder Include="src\Core\Payments\Commands\" />
+    <Folder Include="src\Core\Payments\DTOs\" />
+    <Folder Include="src\Core\Payments\Queries\" />
+    <Folder Include="src\Core\Promotions\Commands\" />
+    <Folder Include="src\Core\Promotions\DTOs\" />
+    <Folder Include="src\Core\Promotions\Queries\" />
+    <Folder Include="src\Core\Shopping\Commands\" />
+    <Folder Include="src\Core\Shopping\DTOs\" />
+    <Folder Include="src\Core\Shopping\Queries\" />
+    <Folder Include="src\Core\Tenants\Commands\" />
+    <Folder Include="src\Core\Tenants\DTOs\" />
+    <Folder Include="src\Core\Tenants\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.10.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.10.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NexCart.Domain\NexCart.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

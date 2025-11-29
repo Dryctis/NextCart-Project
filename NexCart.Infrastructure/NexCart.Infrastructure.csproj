@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="src\Infrastructure\Identity\Models\" />
+    <Folder Include="src\Infrastructure\Caching\" />
+    <Folder Include="src\Infrastructure\Messaging\EventHandlers\" />
+    <Folder Include="src\Infrastructure\Messaging\Models\" />
+    <Folder Include="src\Infrastructure\BackgroundJobs\" />
+    <Folder Include="src\Infrastructure\Extensions\" />
+    <Folder Include="src\Infrastructure\Payments\Models\" />
+    <Folder Include="src\Infrastructure\Services\" />
+    <Folder Include="src\Infrastructure\Persistence\Configurations\" />
+    <Folder Include="src\Infrastructure\Persistence\Interceptors\" />
+    <Folder Include="src\Infrastructure\Persistence\Migrations\" />
+    <Folder Include="src\Infrastructure\Persistence\Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.10" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.3" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="8.0.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.8.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NexCart.Application\NexCart.Application.csproj" />
+    <ProjectReference Include="..\NexCart.Domain\NexCart.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
