@@ -12,13 +12,8 @@
     <Folder Include="src\Infrastructure\Messaging\EventHandlers\" />
     <Folder Include="src\Infrastructure\Messaging\Models\" />
     <Folder Include="src\Infrastructure\BackgroundJobs\" />
-    <Folder Include="src\Infrastructure\Extensions\" />
     <Folder Include="src\Infrastructure\Payments\Models\" />
-    <Folder Include="src\Infrastructure\Services\" />
-    <Folder Include="src\Infrastructure\Persistence\Configurations\" />
-    <Folder Include="src\Infrastructure\Persistence\Interceptors\" />
     <Folder Include="src\Infrastructure\Persistence\Migrations\" />
-    <Folder Include="src\Infrastructure\Persistence\Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
